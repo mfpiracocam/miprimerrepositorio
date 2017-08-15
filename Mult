@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{ int numero;
+  cout<<"Programa para multiplicar por dos"<< endl;
+  cout<<"Ingrese valor entero: "; cin>>numero;
+  cout<< "El doble del valor es:" <<numero*2 <<endl;
+  return 0;
+}
