@@ -1,7 +1,7 @@
 #include <iostream>
 int main (void)
 {
-  int x;
+  int x ;
   std::cout<<x<<"\n";
   return 0;
 }
