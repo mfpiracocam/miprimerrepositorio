@@ -1,0 +1,16 @@
+#include <iostream>
+int main(void)
+  
+{
+  int x=0;
+  std::cout<<"Programa que suma enteros positivos hasta 100 \n";
+  std::cout<<"Introduzca primer número ";
+  std:: cin>> x;
+    while (x<=100);
+      {
+	std::cout<<x<<"\n";
+        x++;
+      }
+      std::cout<< "Fire! \n";
+  return 0;
+}
