@@ -2,13 +2,13 @@
 int main (void)
 {
   //Los siguientes comandos imprimen espacios
-  std::cout<< "\t" << "\v" << "\n";
+  std::cout<< "a\tb\vc\n";
   //Estos todavia no se que hacen
-  std::cout<< "\r" << "\b";
-  //Este se supone que manda un beep pero pos no pasa
-  std::cout<< "\a"
+  std::cout<< "aaaaa\rbbbbb\bccccc\n";
+  //Este se supone que manda bun beep pero pos no pasa
+  std::cout<< "\a\n";
   //Los siguientes comandos imprimen lo que esta después de backslash
-  std::cout<< "\'" << "\"" << "\?" << "\\";
+  std::cout<< "\'" << "\"" << "\?" << "\\" << "\n";
 
   return 0;
 }
