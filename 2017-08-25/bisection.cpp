@@ -26,9 +26,9 @@ int main (void)
       
       else
 	{xu=xr ; }
-      std::cout<< xl << "\t" << xu << "\t" << xr << "\t" << f(xr) << "\n";
+      std::cout<<pasos<< "\t" << xl << "\t" << xu << "\t" << xr << "\t" << f(xr) << "\n";
       pasos++;
     }
-  std::cout<< f(xr);
+  std::cout<< f(xr)<< "\n";
 //imprimir
 }
