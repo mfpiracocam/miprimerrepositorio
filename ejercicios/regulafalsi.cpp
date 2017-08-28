@@ -29,5 +29,5 @@ int main (void)
       std::cout<< pasos  << "\t" << xl << "\t" << xu << "\t" << xr << "\t" << f(xr) << "\n";
     }
   std::cout<< f(xr)<< "\n";
-//imprimir
+  return 0;
 }
