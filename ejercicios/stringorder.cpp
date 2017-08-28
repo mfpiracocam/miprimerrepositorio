@@ -1,58 +1,57 @@
 #include <iostream>
 #include <string>
-int main (void)
+int main(void)
 {
-  string astring;
-  astring = "ola k ase";
-  std::cout<<"Programa que ordena alfabeticamente 3 palabras"<<"\n";
-  std::cout<<"Ingrese las palabras a ordenar: " << "\n";
-  std::cin>> a >> b >> c;
-  int(a), int(b), int(c);
-  if (a>b && a>c)
+  std::string aa, bb, cc ;
+  std::cout<<"Programa que ordena alfabeticamente 3 palabras "<<"\n";
+  std::cin>> aa >> bb >> cc;
+ 
+  if (aa<bb && aa<cc)
     {
-      std::cout<<a<<",";
-      if (b>c)
+      std::cout<<aa<<",";
+      if (bb<cc)
 	{
-	  std::cout<<b<<","<<c<<".";
+	  std::cout<<bb<<","<<cc<<".";
 	}
       else
 	{
-	  std::cout<<c<<","<<b<<".";
+	  std::cout<<cc<<","<<bb<<".";
 	}
     }
- else  if (b>a && b>c)
-   {
-     std::cout<<b<<",";
-     if (a>c)
+  else  if (bb<aa && bb<cc)
+    {
+     std::cout<<bb<<",";
+     if (aa<cc)
        {
-	 std::cout<<a<<","<<c<<".";
+	 std::cout<<aa<<","<<cc<<".";
        }
      else
        {
-	 std::cout<<c<<","<<a<<".";
+	 std::cout<<cc<<","<<aa<<".";
        }
-   }
-else
-  {
-    std::cout<<c<<",";
-    if (a>b)
+    }
+  else
+    {
+      std::cout<<cc<<",";
+      if (aa<bb)
       {
-	std::cout<<a<<","<<b<<".";
+	std::cout<<aa<<","<<bb<<".";
       }
-    else
-      {
-	std::cout<<b<<","<<a<<".";
-      }
-    
-  }
+      else
+	{
+	  std::cout<<bb<<","<<aa<<".";
+	}
+      
+    }
   std::cout<<"\n";
       
   /*if (a>=b && b>=c) {std::cout<<a,b,c;}
-  if (a>=c>=b) {std::cout<<a,c,b;}
-  if (b>=a>=c) {std::cout<<b,a,c;}
-  if (b>=c>=a) {std::cout<<b,c,a;}
-  if (c>=a>=b) {std::cout<<c,a,b;}
-  if (c>=b && b>=a) {std::cout<<c << "  " << b << "  " << a;}*/
+    if (a>=c>=b) {std::cout<<a,c,b;}
+    if (b>=a>=c) {std::cout<<b,a,c;}
+    if (b>=c>=a) {std::cout<<b,c,a;}
+    if (c>=a>=b) {std::cout<<c,a,b;}
+    if (c>=b && b>=a) {std::cout<<c << "  " << b << "  " << a;}*/
   
+  std::cout<<"\n";
   return 0;
 }
