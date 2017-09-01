@@ -19,8 +19,8 @@ int main (void)
   
   /* for (pasos = 0; pasos <= NMAX; pasos++)
      {*/
-      while (pasos <= NMAX)
-	{
+  while (pasos <= NMAX)
+    {
       xr= 0.5*(xu+xl) ;//Promedio de valores extremos
       if (std::fabs(f(xr)) <= tol) break;
       if (f(xu)*f(xr)<0)
@@ -32,10 +32,10 @@ int main (void)
       rer = std::fabs(((f(xr)-14.801)/14.801)*100) ;
       pasos++;
       std::cout<< pasos  << "\t" << rer << "\n";
-	}
-      for (pasos = 0; pasos <= NMAX; pasos++)
-	{
-	  xrr= xuu- (f(xuu)*(xll-xuu))/(f(xll)-f(xuu)) ;//Promedio de valores extremos
+    }
+  for (pasos = 0; pasos <= NMAX; pasos++)
+    {
+      xrr= xuu- (f(xuu)*(xll-xuu))/(f(xll)-f(xuu)) ;//Promedio de valores extremos
 	  if (std::fabs(f(xrr)) <= tol) break;
 	  if (f(xuu)*f(xrr)<0)
 	    {xll=xrr ; } //Decidir si fprom por cada uno de los valores extremos es positivo o negativo
@@ -44,12 +44,12 @@ int main (void)
 	  rerr = std::fabs(((f(xrr)-14.801)/14.801)*100) ;
 	  std::cerr << pasos  << "\t" << rerr << "\n";
 	  //std::cout<< pasos  << "\t" << xl << "\t" << xu << "\t" << xr << "\t" << f(xr) << "\n";
-	}
+    }
+  
+  //pasos++;
       
-      //pasos++;
-      
-      //std::cout<< pasos  << "\t" << rer << "\t" << rerr << "\n";
-      //}
+  //std::cout<< pasos  << "\t" << rer << "\t" << rerr << "\n";
+  //}
   
   
   return 0;
