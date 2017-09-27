@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 double f (double x)//Definir función a evaluar
   
 {
