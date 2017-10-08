@@ -1,20 +1,24 @@
 #include <iostream>
 
-//int fibonacci(int max);
+const int max = 2000;
+int fibonacci(int a, int b , int max);
 int main (void)
 {
-  int max = 14;
-  for (int a=1; a<max;)
-    {
-      a+=a;
-      std::cout<<a<<"\n";
-    }
+  int a = 0;
+  int b = 1;
+  int c = 0;
+  c = fibonacci(a,b,max);
+  std::cout<<c<<std::endl;  
+  
   return 0;
 }
-/*int fibonacci(int max)
+int fibonacci(int a, int b, int max)
 {
-  if()
-    return(a+fibonacci(a));
+  int c = 0;
+  c = a+b;
+  std::cout<<c<<std::endl;
+  if(c<=max)
+    return(fibonacci(b,c,max));
   else
-    return 
-}*/
+    return c; 
+}
